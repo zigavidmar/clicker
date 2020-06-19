@@ -1,0 +1,141 @@
+// GLOBAL
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro';
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+// FONTS
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-ExtraLightIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-ExtraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Black.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-It.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Bold.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-BoldIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-MediumIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-ExtraLight.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Medium.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-SemiboldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-LightIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Semibold.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Light.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-Regular.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/subset-SourceCodePro-BlackIt.woff2') format('woff2'),
+        url('../fonts/subset-SourceCodePro-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
