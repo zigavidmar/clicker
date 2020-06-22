@@ -1,11 +1,30 @@
-import React from 'react'
-import { Counter } from './components/Counter'
+import React, { useState} from 'react'
+// COMPONENTS
 import { Greeting } from './components/Greeting'
+// SASS
+import './sass/counter.scss'
+import './sass/footer.scss'
+import { Counter } from './components/Counter'
+import { First } from './components/levels/First'
+
 
 export const App: React.FC = () => {
+    const [status, setStatus] = useState(<Greeting/>)
+    const [state, setState] = useState(true)
+
+    const changeState = () => {
+        setStatus(<First level={1} counter={5}/>);
+        setState(false);
+    }
     return (
         <div>
-            <Counter text={<Greeting/>}/>
+            <div className="counter-wrapper">
+                {status}
+                { state === true ? <button onClick={changeState}>Start</button> : null }
+            </div>
+            <div className="footer-wrapper">
+                moji logoti
+            </div>
         </div>
     )
 }

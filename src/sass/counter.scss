@@ -3,4 +3,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+
+    // COUNTER COMPONENT
+    .counter-circle {
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+
+
+    // GREETING COMPONENT
+
+    .greeting-title {
+        text-align: center;
+        padding-bottom: 50px;
+    }
 }
