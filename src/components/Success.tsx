@@ -20,9 +20,10 @@ export const Success: React.FC<State> = ({level}) => {
                 <h2>Congratulations</h2>
             </div>
             <div className="greeting-content">
-                <p>You finished all {level} levels, which consequently makes you number 1.</p>
+                <p>You finished all {level} levels.</p>
                 <br/>
-                <p>Thank you for playing the game and I wish you a great rest of the day.</p>
+                <br/>
+                <p>Thank you for playing the game and have a good rest of the day.</p>
             </div>
         </div>
     )
