@@ -3,3 +3,11 @@ Clicker is a simple game with 5 levels. Every level you get a number, timer and 
 ## [Live demo](https://zigavidmar.github.io/clicker/)
 
 The game is created with React and typescript.
+## Home
+![](src/images/home.png)
+
+## Level
+![](src/images/level.png)
+
+## Finish
+![](src/images/win.png)
