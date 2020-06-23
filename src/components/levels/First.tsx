@@ -7,7 +7,8 @@ import { FailMessage } from '../Failure'
 import { Second } from './Second'
 
 export const randomColor = Math.floor(Math.random()*16777215).toString(16);
-export const countToBeClicked = Math.floor(Math.random() * 10) + 5; 
+
+let countToBeClicked = Math.floor(Math.random() * 10) + 5; 
 
 interface State {
     level: number;
@@ -24,7 +25,10 @@ export const First: React.FC<State> = ({level = 1}) => {
         return () => clearInterval(timer);
       }, [counter]);
 
-    
+    const resetValue = () => {
+        setReset(true);
+        countToBeClicked = Math.floor(Math.random() * 10) + 5; 
+    }
     
     if (count == countToBeClicked && counter === 0) {
     return (
@@ -35,9 +39,13 @@ export const First: React.FC<State> = ({level = 1}) => {
         <div>
             {reset === false ?
             <div>
-            <div>Level {level} Failed!</div>
-            <div>Oh no! :(</div>
-            <button onClick={() => setReset(true)}>Try again</button>
+                <div className="counter-title">
+                    <h2>Level {level} Failed!</h2>
+                </div>
+                <div className="greeting-content">Oh no! :( You clicked the button {count} times.</div>
+                <div className="counter-start-button">
+                    <button onClick={resetValue}>Try again</button>
+                </div>
             </div> : <First level={1}/>
         }
             
@@ -46,12 +54,18 @@ export const First: React.FC<State> = ({level = 1}) => {
     } else {
     return (
         <div>
-            <div>Level {level}</div>
-            {counter > 0 ? counter : null}
+            <div className="counter-title">
+                    <h2>Level {level}</h2>
+            </div>
+            <div className="counter-timer counter-number-of-times">
+                {counter > 0 ? counter : null}
+            </div>
             <div className="counter-circle" onClick={() => setCount(count + 1)} style={{background: `#${randomColor}`}}>
                 {count}
             </div>
-            <div>You have to click {countToBeClicked} times</div>
+            <div className="counter-message">
+                <p>You have to click the circle <p className="counter-number-of-times">{countToBeClicked}</p> times</p>
+            </div>
         </div>
     )
     }

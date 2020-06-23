@@ -6,9 +6,9 @@ import {countToBeClicked} from '../Counter'; */
 import { FailMessage } from '../Failure'
 import { Fifth } from './Fifth';
 import { First } from './First';
+import { randomColor } from './First';
 
-export const randomColor = Math.floor(Math.random()*16777215).toString(16);
-export const countToBeClicked = Math.floor(Math.random() * 10) + 5; 
+let countToBeClicked = Math.floor(Math.random() * 10) + 5; 
 
 interface State {
     level: number;
@@ -16,7 +16,7 @@ interface State {
 
 export const Fourth: React.FC<State> = ({level = 4}) => {
     const [count, setCount] = useState(0)
-    const [counter, setCounter] = React.useState(3);
+    const [counter, setCounter] = React.useState(4);
     const [reset, setReset] = useState(false)
 
     React.useEffect(() => {
@@ -25,6 +25,11 @@ export const Fourth: React.FC<State> = ({level = 4}) => {
         return () => clearInterval(timer);
       }, [counter]);
     
+      const resetValue = () => {
+        setReset(true);
+        countToBeClicked = Math.floor(Math.random() * 10) + 5; 
+    }
+
       if (count == countToBeClicked && counter === 0) {
         return (
             <Fifth level={5}/>
@@ -34,9 +39,13 @@ export const Fourth: React.FC<State> = ({level = 4}) => {
             <div>
                 {reset === false ?
                 <div>
-                <div>Level {level} Failed!</div>
-                <div>Oh no! :(</div>
-                <button onClick={() => setReset(true)}>Try again</button>
+                <div className="counter-title">
+                    <h2>Level {level} Failed!</h2>
+                </div>
+                <div className="greeting-content">Oh no! :( You clicked the button {count} times.</div>
+                <div className="counter-start-button">
+                    <button onClick={resetValue}>Try again</button>
+                </div>
                 </div> :    <First level={1}/>
             }
                 
@@ -45,12 +54,18 @@ export const Fourth: React.FC<State> = ({level = 4}) => {
         } else {
         return (
             <div>
-                <div>Level {level}</div>
-                {counter > 0 ? counter : null}
-                <div className="counter-circle" onClick={() => setCount(count + 1)} style={{background: `#${randomColor}`}}>
-                    {count}
+                <div className="counter-title">
+                    <h2>Level {level}</h2>
                 </div>
-                <div>You have to click {countToBeClicked} times</div>
+                <div className="counter-timer counter-number-of-times">
+                    {counter > 0 ? counter : null}
+                </div>
+                <div className="counter-circle" onClick={() => setCount(count + 1)} style={{background: `#${randomColor}`}}>
+                
+                </div>
+                <div className="counter-message">
+                    <p>You have to click the circle <p className="counter-number-of-times">{countToBeClicked}</p> times</p>
+                </div>
             </div>
         )
     }

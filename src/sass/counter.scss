@@ -1,28 +1,158 @@
+// HEADER
+
+.header-wrapper {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    text-align: center;
+    h1 {
+        font-size: 49px;
+        font-style: italic;
+    }
+}
+
 .counter-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
+    height: 40%;
     text-align: center;
+    background: #F2F2F2;
+/*     border: 1px solid black;
+ */    padding: 40px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.32);
+
+    // GREETING
+    .counter-title {
+        padding-bottom: 50px;
+    }
+
+    .counter-timer {
+        padding-bottom: 50px;
+    }
+
+    .counter-circle {
+    }
+
+    .counter-message {
+        padding-top: 50px;
+    }
+
+    .counter-number-of-times {
+        font-size: 30px;
+        display: inline-block;
+    }
+
+    .greeting-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .greeting-footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 30px 0px;
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            color: #264653;
+            padding: 10px;
+            
+            svg {
+                height: 50px;
+                width: auto;
+                padding: 0px 20px;
+                path {
+                    fill: #264653;
+                }
+            }
+        }
+
+        .greeting-footer-left {
+            float: left;
+            margin-left: 30px;
+            
+        }
+
+        .greeting-footer-right {
+            float: right;
+            margin-right: 30px;
+            
+        }
+    }
+
+    // COUNTER
+
+    .counter-start-button {
+        padding-top: 100px;
+        button {
+            padding: 10px 40px;
+            cursor: pointer;
+        }
+    }
+
+    .counter-heading {
+        padding-bottom: 20px;
+    }
+
+    .counter-timer {
+        
+    }
 
     // COUNTER COMPONENT
     .counter-circle {
-        height: 100px;
-        width: 100px;
+        height: 125px;
+        width: 125px;
         justify-content: center;
         display: flex;
         align-items: center;
         border-radius: 50%;
         margin: 0 auto;
+        border: 1px solid #264653;
+        -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
     }
-
-
 
     // GREETING COMPONENT
 
     .greeting-title {
         text-align: center;
         padding-bottom: 50px;
+    }
+}
+
+// FOOTER
+
+.footer-wrapper {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        padding: 0px 30px;
+        svg {
+            width: 30px;
+            height: 30px;
+            path {
+                fill: #264653;
+            }
+        }
     }
 }

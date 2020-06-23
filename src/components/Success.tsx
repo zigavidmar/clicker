@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
-import { First } from './levels/First'
+import '../sass/fireworks.scss'
+
 // COMPONENTS
 // SASS
 
@@ -11,7 +12,18 @@ export const Success: React.FC<State> = ({level}) => {
     
     return (
         <div>
-            Success {level}
+            <div className="pyro">
+                <div className="before"></div>
+                <div className="after"></div>
+            </div>
+            <div className="counter-title">
+                <h2>Congratulations</h2>
+            </div>
+            <div className="greeting-content">
+                <p>You finished all {level} levels, which consequently makes you number 1.</p>
+                <br/>
+                <p>Thank you for playing the game and I wish you a great rest of the day.</p>
+            </div>
         </div>
     )
 } 
