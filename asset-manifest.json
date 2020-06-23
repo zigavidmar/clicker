@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/zigavidmar/clicker/static/css/main.9cf251aa.chunk.css",
+    "main.js": "/zigavidmar/clicker/static/js/main.def3ad05.chunk.js",
+    "main.js.map": "/zigavidmar/clicker/static/js/main.def3ad05.chunk.js.map",
+    "runtime-main.js": "/zigavidmar/clicker/static/js/runtime-main.326d6718.js",
+    "runtime-main.js.map": "/zigavidmar/clicker/static/js/runtime-main.326d6718.js.map",
+    "static/js/2.79780716.chunk.js": "/zigavidmar/clicker/static/js/2.79780716.chunk.js",
+    "static/js/2.79780716.chunk.js.map": "/zigavidmar/clicker/static/js/2.79780716.chunk.js.map",
+    "index.html": "/zigavidmar/clicker/index.html",
+    "precache-manifest.9fbb1a50504bcd7f5398f2d3672e77c5.js": "/zigavidmar/clicker/precache-manifest.9fbb1a50504bcd7f5398f2d3672e77c5.js",
+    "service-worker.js": "/zigavidmar/clicker/service-worker.js",
+    "static/css/main.9cf251aa.chunk.css.map": "/zigavidmar/clicker/static/css/main.9cf251aa.chunk.css.map",
+    "static/js/2.79780716.chunk.js.LICENSE.txt": "/zigavidmar/clicker/static/js/2.79780716.chunk.js.LICENSE.txt",
+    "static/media/difficulty-icon.ab5e207f.svg": "/zigavidmar/clicker/static/media/difficulty-icon.ab5e207f.svg",
+    "static/media/github-icon.192a6620.svg": "/zigavidmar/clicker/static/media/github-icon.192a6620.svg",
+    "static/media/mail-icon.bfe8a6b5.svg": "/zigavidmar/clicker/static/media/mail-icon.bfe8a6b5.svg",
+    "static/media/global.scss": "/zigavidmar/clicker/static/media/subset-SourceCodePro-SemiboldIt.cf6926a8.woff2",
+    "static/media/timer-icon.3145bacb.svg": "/zigavidmar/clicker/static/media/timer-icon.3145bacb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.326d6718.js",
+    "static/js/2.79780716.chunk.js",
+    "static/css/main.9cf251aa.chunk.css",
+    "static/js/main.def3ad05.chunk.js"
+  ]
+}
