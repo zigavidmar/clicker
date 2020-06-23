@@ -4,7 +4,7 @@ import {countToBeClicked} from '../Counter'; */
 // COMPONENTS
 // SASS
 import { FailMessage } from '../Failure'
-import { Third } from './Third';
+import { Fifth } from './Fifth';
 import { First } from './First';
 
 export const randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -14,7 +14,7 @@ interface State {
     level: number;
 }
 
-export const Second: React.FC<State> = ({level = 1}) => {
+export const Fourth: React.FC<State> = ({level = 4}) => {
     const [count, setCount] = useState(0)
     const [counter, setCounter] = React.useState(3);
     const [reset, setReset] = useState(false)
@@ -27,7 +27,7 @@ export const Second: React.FC<State> = ({level = 1}) => {
     
       if (count == countToBeClicked && counter === 0) {
         return (
-            <Third level={3}/>
+            <Fifth level={5}/>
         )
         } else if (count != countToBeClicked && counter === 0) {
         return (

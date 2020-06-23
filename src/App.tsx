@@ -4,7 +4,6 @@ import { Greeting } from './components/Greeting'
 // SASS
 import './sass/counter.scss'
 import './sass/footer.scss'
-import { Counter } from './components/Counter'
 import { First } from './components/levels/First'
 
 
@@ -13,7 +12,7 @@ export const App: React.FC = () => {
     const [state, setState] = useState(true)
 
     const changeState = () => {
-        setStatus(<First level={1} counter={5}/>);
+        setStatus(<First level={1}/>);
         setState(false);
     }
     return (

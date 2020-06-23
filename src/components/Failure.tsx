@@ -5,7 +5,6 @@ import { First } from './levels/First'
 
 interface State {
     level: number;
-    counter: number;
 }
 
 export const FailMessage: React.FC<State> = () => {
@@ -16,7 +15,7 @@ export const FailMessage: React.FC<State> = () => {
             <div>
             Oh noo! Now you have to repeat the drill!
             <button onClick={() => setstate(false)}>Try again!</button>
-            </div> : <First level={1} counter={5}/>
+            </div> : <First level={1}/>
             }
         </div>
     )
